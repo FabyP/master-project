@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
 
 const AuthTitle = () => (
   <View style={styles.container}>
-    <Text style={styles.title}>Corona Tracker App</Text>
+    <Text style={styles.title}>Corona Tracker</Text>
     <Text style={styles.lightText}>Mehr Sicherheit durch Daten!</Text>
   </View>
 );

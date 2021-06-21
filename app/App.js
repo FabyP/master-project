@@ -5,7 +5,6 @@ import jwt_decode from "jwt-decode";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 import RootStackScreen from "./src/navigation/RootStackScreen";
-
 import store from "./src/context/store/store";
 import { setCurrentUser, logoutUser } from "./src/context/actions/authActions";
 

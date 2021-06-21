@@ -14,6 +14,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     padding: 5,
+    width: '100%',
   },
   buttonRow: {
     flexDirection: "row",
@@ -44,7 +45,7 @@ export default function LoginScreen({ navigation }) {
           placeholder="E-Mail"
           onChangeText={(text) => setUserData({ ...userdata, email: text })}
           value={userdata.email || ""}
-          containerStyle={{ maxWidth: 400 }}
+          containerStyle={{ maxWidth: 400, minWidth: 300 }}
           autoCompleteType="off"
         />
         {errors.email && <Text style={{ color: "red" }}>{errors.email}</Text>}
@@ -53,7 +54,7 @@ export default function LoginScreen({ navigation }) {
           onChangeText={(text) => setUserData({ ...userdata, password: text })}
           value={userdata.password || ""}
           secureTextEntry
-          containerStyle={{ maxWidth: 400 }}
+          containerStyle={{ maxWidth: 400, minWidth: 300 }}
           autoCompleteType="off"
         />
         {errors.password && (

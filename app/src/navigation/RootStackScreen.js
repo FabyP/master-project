@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 
 import AuthStackScreen from "./AuthStackScreen";
 import MainScreen from "../screens/main/Main";
+import MainStackScreen from "./MainStackScreen";
 
 // Hauptnavigation (Jenachdem ob eingeloggt oder nicht, wird Auth. oder MainScreen angezeigt)
 const RootStack = createStackNavigator();
@@ -15,7 +16,7 @@ const RootStackScreen = () => {
       {isSignedIn ? (
         <RootStack.Screen
           name="App"
-          component={MainScreen}
+          component={MainStackScreen}
           options={{ animationEnabled: false }}
         />
       ) : (

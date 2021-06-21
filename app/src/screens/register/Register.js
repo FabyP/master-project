@@ -41,7 +41,7 @@ function RegisterScreen({ navigation }) {
           placeholder="Benutzername"
           onChangeText={(text) => setUserData({ ...userdata, name: text })}
           value={userdata.name || ""}
-          containerStyle={{ maxWidth: 400 }}
+          containerStyle={{ maxWidth: 400, minWidth: 300 }}
           autoCompleteType="off"
         />
         {errors.name && <Text style={{ color: "red" }}>{errors.name}</Text>}
@@ -49,7 +49,7 @@ function RegisterScreen({ navigation }) {
           placeholder="E-Mail"
           onChangeText={(text) => setUserData({ ...userdata, email: text })}
           value={userdata.email || ""}
-          containerStyle={{ maxWidth: 400 }}
+          containerStyle={{ maxWidth: 400, minWidth: 300 }}
           autoCompleteType="off"
         />
         {errors.email && <Text style={{ color: "red" }}>{errors.email}</Text>}
@@ -58,7 +58,7 @@ function RegisterScreen({ navigation }) {
           onChangeText={(text) => setUserData({ ...userdata, password: text })}
           value={userdata.password || ""}
           secureTextEntry
-          containerStyle={{ maxWidth: 400 }}
+          containerStyle={{ maxWidth: 400, minWidth: 300 }}
           autoCompleteType="off"
         />
         {errors.password && (
@@ -69,7 +69,7 @@ function RegisterScreen({ navigation }) {
           onChangeText={(text) => setUserData({ ...userdata, password2: text })}
           value={userdata.password2 || ""}
           secureTextEntry
-          containerStyle={{ maxWidth: 400 }}
+          containerStyle={{ maxWidth: 400, minWidth: 300 }}
           autoCompleteType="off"
         />
         {errors.password2 && (
